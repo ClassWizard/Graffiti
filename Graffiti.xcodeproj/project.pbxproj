@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8310942E1CC3DB980084FCE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8310942D1CC3DB980084FCE7 /* main.m */; };
+		831094311CC3DB980084FCE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 831094301CC3DB980084FCE7 /* AppDelegate.m */; };
+		831094341CC3DB980084FCE7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 831094331CC3DB980084FCE7 /* ViewController.m */; };
+		831094371CC3DB980084FCE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831094351CC3DB980084FCE7 /* Main.storyboard */; };
+		831094391CC3DB980084FCE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 831094381CC3DB980084FCE7 /* Assets.xcassets */; };
+		8310943C1CC3DB980084FCE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8310943A1CC3DB980084FCE7 /* LaunchScreen.storyboard */; };
+		831094471CC3DB990084FCE7 /* GraffitiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 831094461CC3DB990084FCE7 /* GraffitiTests.m */; };
+		831094521CC3DB990084FCE7 /* GraffitiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 831094511CC3DB990084FCE7 /* GraffitiUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		831094431CC3DB990084FCE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 831094211CC3DB980084FCE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 831094281CC3DB980084FCE7;
+			remoteInfo = Graffiti;
+		};
+		8310944E1CC3DB990084FCE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 831094211CC3DB980084FCE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 831094281CC3DB980084FCE7;
+			remoteInfo = Graffiti;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		831094291CC3DB980084FCE7 /* Graffiti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graffiti.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8310942D1CC3DB980084FCE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8310942F1CC3DB980084FCE7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		831094301CC3DB980084FCE7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		831094321CC3DB980084FCE7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		831094331CC3DB980084FCE7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		831094361CC3DB980084FCE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		831094381CC3DB980084FCE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8310943B1CC3DB980084FCE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8310943D1CC3DB990084FCE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		831094421CC3DB990084FCE7 /* GraffitiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraffitiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		831094461CC3DB990084FCE7 /* GraffitiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraffitiTests.m; sourceTree = "<group>"; };
+		831094481CC3DB990084FCE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8310944D1CC3DB990084FCE7 /* GraffitiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraffitiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		831094511CC3DB990084FCE7 /* GraffitiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraffitiUITests.m; sourceTree = "<group>"; };
+		831094531CC3DB990084FCE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		831094261CC3DB980084FCE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8310943F1CC3DB990084FCE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8310944A1CC3DB990084FCE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		831094201CC3DB980084FCE7 = {
+			isa = PBXGroup;
+			children = (
+				8310942B1CC3DB980084FCE7 /* Graffiti */,
+				831094451CC3DB990084FCE7 /* GraffitiTests */,
+				831094501CC3DB990084FCE7 /* GraffitiUITests */,
+				8310942A1CC3DB980084FCE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8310942A1CC3DB980084FCE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				831094291CC3DB980084FCE7 /* Graffiti.app */,
+				831094421CC3DB990084FCE7 /* GraffitiTests.xctest */,
+				8310944D1CC3DB990084FCE7 /* GraffitiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8310942B1CC3DB980084FCE7 /* Graffiti */ = {
+			isa = PBXGroup;
+			children = (
+				8310942F1CC3DB980084FCE7 /* AppDelegate.h */,
+				831094301CC3DB980084FCE7 /* AppDelegate.m */,
+				831094321CC3DB980084FCE7 /* ViewController.h */,
+				831094331CC3DB980084FCE7 /* ViewController.m */,
+				831094351CC3DB980084FCE7 /* Main.storyboard */,
+				831094381CC3DB980084FCE7 /* Assets.xcassets */,
+				8310943A1CC3DB980084FCE7 /* LaunchScreen.storyboard */,
+				8310943D1CC3DB990084FCE7 /* Info.plist */,
+				8310942C1CC3DB980084FCE7 /* Supporting Files */,
+			);
+			path = Graffiti;
+			sourceTree = "<group>";
+		};
+		8310942C1CC3DB980084FCE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8310942D1CC3DB980084FCE7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		831094451CC3DB990084FCE7 /* GraffitiTests */ = {
+			isa = PBXGroup;
+			children = (
+				831094461CC3DB990084FCE7 /* GraffitiTests.m */,
+				831094481CC3DB990084FCE7 /* Info.plist */,
+			);
+			path = GraffitiTests;
+			sourceTree = "<group>";
+		};
+		831094501CC3DB990084FCE7 /* GraffitiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				831094511CC3DB990084FCE7 /* GraffitiUITests.m */,
+				831094531CC3DB990084FCE7 /* Info.plist */,
+			);
+			path = GraffitiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		831094281CC3DB980084FCE7 /* Graffiti */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 831094561CC3DB990084FCE7 /* Build configuration list for PBXNativeTarget "Graffiti" */;
+			buildPhases = (
+				831094251CC3DB980084FCE7 /* Sources */,
+				831094261CC3DB980084FCE7 /* Frameworks */,
+				831094271CC3DB980084FCE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Graffiti;
+			productName = Graffiti;
+			productReference = 831094291CC3DB980084FCE7 /* Graffiti.app */;
+			productType = "com.apple.product-type.application";
+		};
+		831094411CC3DB990084FCE7 /* GraffitiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 831094591CC3DB990084FCE7 /* Build configuration list for PBXNativeTarget "GraffitiTests" */;
+			buildPhases = (
+				8310943E1CC3DB990084FCE7 /* Sources */,
+				8310943F1CC3DB990084FCE7 /* Frameworks */,
+				831094401CC3DB990084FCE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				831094441CC3DB990084FCE7 /* PBXTargetDependency */,
+			);
+			name = GraffitiTests;
+			productName = GraffitiTests;
+			productReference = 831094421CC3DB990084FCE7 /* GraffitiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8310944C1CC3DB990084FCE7 /* GraffitiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8310945C1CC3DB990084FCE7 /* Build configuration list for PBXNativeTarget "GraffitiUITests" */;
+			buildPhases = (
+				831094491CC3DB990084FCE7 /* Sources */,
+				8310944A1CC3DB990084FCE7 /* Frameworks */,
+				8310944B1CC3DB990084FCE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8310944F1CC3DB990084FCE7 /* PBXTargetDependency */,
+			);
+			name = GraffitiUITests;
+			productName = GraffitiUITests;
+			productReference = 8310944D1CC3DB990084FCE7 /* GraffitiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		831094211CC3DB980084FCE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "陈隆威";
+				TargetAttributes = {
+					831094281CC3DB980084FCE7 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					831094411CC3DB990084FCE7 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 831094281CC3DB980084FCE7;
+					};
+					8310944C1CC3DB990084FCE7 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 831094281CC3DB980084FCE7;
+					};
+				};
+			};
+			buildConfigurationList = 831094241CC3DB980084FCE7 /* Build configuration list for PBXProject "Graffiti" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 831094201CC3DB980084FCE7;
+			productRefGroup = 8310942A1CC3DB980084FCE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				831094281CC3DB980084FCE7 /* Graffiti */,
+				831094411CC3DB990084FCE7 /* GraffitiTests */,
+				8310944C1CC3DB990084FCE7 /* GraffitiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		831094271CC3DB980084FCE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8310943C1CC3DB980084FCE7 /* LaunchScreen.storyboard in Resources */,
+				831094391CC3DB980084FCE7 /* Assets.xcassets in Resources */,
+				831094371CC3DB980084FCE7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		831094401CC3DB990084FCE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8310944B1CC3DB990084FCE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		831094251CC3DB980084FCE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				831094341CC3DB980084FCE7 /* ViewController.m in Sources */,
+				831094311CC3DB980084FCE7 /* AppDelegate.m in Sources */,
+				8310942E1CC3DB980084FCE7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8310943E1CC3DB990084FCE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				831094471CC3DB990084FCE7 /* GraffitiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		831094491CC3DB990084FCE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				831094521CC3DB990084FCE7 /* GraffitiUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		831094441CC3DB990084FCE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 831094281CC3DB980084FCE7 /* Graffiti */;
+			targetProxy = 831094431CC3DB990084FCE7 /* PBXContainerItemProxy */;
+		};
+		8310944F1CC3DB990084FCE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 831094281CC3DB980084FCE7 /* Graffiti */;
+			targetProxy = 8310944E1CC3DB990084FCE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		831094351CC3DB980084FCE7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				831094361CC3DB980084FCE7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8310943A1CC3DB980084FCE7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8310943B1CC3DB980084FCE7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		831094541CC3DB990084FCE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		831094551CC3DB990084FCE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		831094571CC3DB990084FCE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Graffiti/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ClassWizard.Graffiti;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		831094581CC3DB990084FCE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Graffiti/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ClassWizard.Graffiti;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8310945A1CC3DB990084FCE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GraffitiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ClassWizard.GraffitiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graffiti.app/Graffiti";
+			};
+			name = Debug;
+		};
+		8310945B1CC3DB990084FCE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GraffitiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ClassWizard.GraffitiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graffiti.app/Graffiti";
+			};
+			name = Release;
+		};
+		8310945D1CC3DB990084FCE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GraffitiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ClassWizard.GraffitiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Graffiti;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8310945E1CC3DB990084FCE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GraffitiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ClassWizard.GraffitiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Graffiti;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		831094241CC3DB980084FCE7 /* Build configuration list for PBXProject "Graffiti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				831094541CC3DB990084FCE7 /* Debug */,
+				831094551CC3DB990084FCE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		831094561CC3DB990084FCE7 /* Build configuration list for PBXNativeTarget "Graffiti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				831094571CC3DB990084FCE7 /* Debug */,
+				831094581CC3DB990084FCE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		831094591CC3DB990084FCE7 /* Build configuration list for PBXNativeTarget "GraffitiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8310945A1CC3DB990084FCE7 /* Debug */,
+				8310945B1CC3DB990084FCE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8310945C1CC3DB990084FCE7 /* Build configuration list for PBXNativeTarget "GraffitiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8310945D1CC3DB990084FCE7 /* Debug */,
+				8310945E1CC3DB990084FCE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 831094211CC3DB980084FCE7 /* Project object */;
+}
