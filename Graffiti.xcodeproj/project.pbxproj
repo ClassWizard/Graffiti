@@ -15,6 +15,7 @@
 		8310943C1CC3DB980084FCE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8310943A1CC3DB980084FCE7 /* LaunchScreen.storyboard */; };
 		831094471CC3DB990084FCE7 /* GraffitiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 831094461CC3DB990084FCE7 /* GraffitiTests.m */; };
 		831094521CC3DB990084FCE7 /* GraffitiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 831094511CC3DB990084FCE7 /* GraffitiUITests.m */; };
+		831094611CC3DBDD0084FCE7 /* GraffitiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 831094601CC3DBDD0084FCE7 /* GraffitiView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		8310944D1CC3DB990084FCE7 /* GraffitiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraffitiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		831094511CC3DB990084FCE7 /* GraffitiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraffitiUITests.m; sourceTree = "<group>"; };
 		831094531CC3DB990084FCE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8310945F1CC3DBDD0084FCE7 /* GraffitiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraffitiView.h; sourceTree = "<group>"; };
+		831094601CC3DBDD0084FCE7 /* GraffitiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraffitiView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				831094301CC3DB980084FCE7 /* AppDelegate.m */,
 				831094321CC3DB980084FCE7 /* ViewController.h */,
 				831094331CC3DB980084FCE7 /* ViewController.m */,
+				8310945F1CC3DBDD0084FCE7 /* GraffitiView.h */,
+				831094601CC3DBDD0084FCE7 /* GraffitiView.m */,
 				831094351CC3DB980084FCE7 /* Main.storyboard */,
 				831094381CC3DB980084FCE7 /* Assets.xcassets */,
 				8310943A1CC3DB980084FCE7 /* LaunchScreen.storyboard */,
@@ -270,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				831094611CC3DBDD0084FCE7 /* GraffitiView.m in Sources */,
 				831094341CC3DB980084FCE7 /* ViewController.m in Sources */,
 				831094311CC3DB980084FCE7 /* AppDelegate.m in Sources */,
 				8310942E1CC3DB980084FCE7 /* main.m in Sources */,

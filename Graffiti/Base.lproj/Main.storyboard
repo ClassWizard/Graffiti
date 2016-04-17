@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,64 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qq3-ER-O24" customClass="GraffitiView">
+                                <rect key="frame" x="20" y="66" width="560" height="452"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qq3-xr-h47">
+                                <rect key="frame" x="20" y="28" width="36" height="30"/>
+                                <state key="normal" title="Redo"/>
+                                <connections>
+                                    <action selector="clickRedoBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gYg-b1-3sC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OrU-WZ-3VX">
+                                <rect key="frame" x="544" y="28" width="36" height="30"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clickClearBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CDG-HF-RWA"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cee-co-h1o">
+                                <rect key="frame" x="20" y="564" width="560" height="29"/>
+                                <segments>
+                                    <segment title="Red"/>
+                                    <segment title="Green"/>
+                                    <segment title="Blue"/>
+                                </segments>
+                            </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hER-JG-kL8">
+                                <rect key="frame" x="18" y="526" width="564" height="31"/>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qq3-ER-O24" firstAttribute="top" secondItem="qq3-xr-h47" secondAttribute="bottom" constant="8" symbolic="YES" id="ACL-AU-umm"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="hER-JG-kL8" secondAttribute="leading" id="Cco-gE-rxm"/>
+                            <constraint firstItem="hER-JG-kL8" firstAttribute="top" secondItem="qq3-ER-O24" secondAttribute="bottom" constant="8" symbolic="YES" id="EiM-nn-UU1"/>
+                            <constraint firstItem="OrU-WZ-3VX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="OVX-mc-q8M"/>
+                            <constraint firstItem="qq3-xr-h47" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="RS6-zN-19v"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hER-JG-kL8" secondAttribute="trailing" id="SMk-dH-QZH"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="qq3-xr-h47" secondAttribute="leading" id="ZqC-6p-HrR"/>
+                            <constraint firstItem="Cee-co-h1o" firstAttribute="top" secondItem="hER-JG-kL8" secondAttribute="bottom" constant="8" symbolic="YES" id="aHT-Gy-bYp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qq3-ER-O24" secondAttribute="trailing" id="eTm-yK-IfE"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Cee-co-h1o" secondAttribute="leading" id="fEn-yd-03J"/>
+                            <constraint firstItem="qq3-ER-O24" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gcU-rW-qWK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Cee-co-h1o" secondAttribute="bottom" constant="8" symbolic="YES" id="pH8-D8-Wxf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OrU-WZ-3VX" secondAttribute="trailing" id="uhk-zf-xmk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Cee-co-h1o" secondAttribute="trailing" id="yLg-Uj-RbV"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="graffitView" destination="qq3-ER-O24" id="2Rr-Ud-Aan"/>
+                        <outlet property="lineColorSegment" destination="Cee-co-h1o" id="ZRb-e8-fiq"/>
+                        <outlet property="lineWidthSlider" destination="hER-JG-kL8" id="4vr-xd-FAI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="223" y="274"/>
         </scene>
     </scenes>
 </document>

@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "GraffitiView.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet GraffitiView *graffitView;
+@property (weak, nonatomic) IBOutlet UISlider *lineWidthSlider;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *lineColorSegment;
 
 @end
 
@@ -22,6 +27,14 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)clickRedoBtn:(UIButton *)sender {
+    [self.graffitView redo];
+}
+
+- (IBAction)clickClearBtn:(UIButton *)sender {
+    [self.graffitView clear];
 }
 
 @end
