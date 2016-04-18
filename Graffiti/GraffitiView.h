@@ -10,10 +10,17 @@
 
 @interface GraffitiView : UIView
 
-@property (nonatomic, assign) CGFloat lineWidth;
-@property (nonatomic, strong) UIColor *lineColer;
+@property (nonatomic, assign) CGFloat  lineWidth;//当前线条大小
+@property (nonatomic, strong) UIColor *lineColor;//当前线条颜色
 
+/**
+ *  清除画板中的所有线条
+ */
 - (void)clear;
+
+/**
+ *  撤销上一笔
+ */
 - (void)redo;
 
 @end

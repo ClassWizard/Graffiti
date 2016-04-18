@@ -16,6 +16,7 @@
 		831094471CC3DB990084FCE7 /* GraffitiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 831094461CC3DB990084FCE7 /* GraffitiTests.m */; };
 		831094521CC3DB990084FCE7 /* GraffitiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 831094511CC3DB990084FCE7 /* GraffitiUITests.m */; };
 		831094611CC3DBDD0084FCE7 /* GraffitiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 831094601CC3DBDD0084FCE7 /* GraffitiView.m */; };
+		83830D741CC4854100234D89 /* LineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83830D731CC4854100234D89 /* LineModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		831094531CC3DB990084FCE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8310945F1CC3DBDD0084FCE7 /* GraffitiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraffitiView.h; sourceTree = "<group>"; };
 		831094601CC3DBDD0084FCE7 /* GraffitiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraffitiView.m; sourceTree = "<group>"; };
+		83830D721CC4854100234D89 /* LineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineModel.h; sourceTree = "<group>"; };
+		83830D731CC4854100234D89 /* LineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,16 +107,13 @@
 		8310942B1CC3DB980084FCE7 /* Graffiti */ = {
 			isa = PBXGroup;
 			children = (
-				8310942F1CC3DB980084FCE7 /* AppDelegate.h */,
-				831094301CC3DB980084FCE7 /* AppDelegate.m */,
-				831094321CC3DB980084FCE7 /* ViewController.h */,
-				831094331CC3DB980084FCE7 /* ViewController.m */,
+				83830D721CC4854100234D89 /* LineModel.h */,
+				83830D731CC4854100234D89 /* LineModel.m */,
 				8310945F1CC3DBDD0084FCE7 /* GraffitiView.h */,
 				831094601CC3DBDD0084FCE7 /* GraffitiView.m */,
+				831094321CC3DB980084FCE7 /* ViewController.h */,
+				831094331CC3DB980084FCE7 /* ViewController.m */,
 				831094351CC3DB980084FCE7 /* Main.storyboard */,
-				831094381CC3DB980084FCE7 /* Assets.xcassets */,
-				8310943A1CC3DB980084FCE7 /* LaunchScreen.storyboard */,
-				8310943D1CC3DB990084FCE7 /* Info.plist */,
 				8310942C1CC3DB980084FCE7 /* Supporting Files */,
 			);
 			path = Graffiti;
@@ -122,6 +122,11 @@
 		8310942C1CC3DB980084FCE7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				831094381CC3DB980084FCE7 /* Assets.xcassets */,
+				8310943A1CC3DB980084FCE7 /* LaunchScreen.storyboard */,
+				8310942F1CC3DB980084FCE7 /* AppDelegate.h */,
+				831094301CC3DB980084FCE7 /* AppDelegate.m */,
+				8310943D1CC3DB990084FCE7 /* Info.plist */,
 				8310942D1CC3DB980084FCE7 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -275,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83830D741CC4854100234D89 /* LineModel.m in Sources */,
 				831094611CC3DBDD0084FCE7 /* GraffitiView.m in Sources */,
 				831094341CC3DB980084FCE7 /* ViewController.m in Sources */,
 				831094311CC3DB980084FCE7 /* AppDelegate.m in Sources */,
@@ -504,6 +510,7 @@
 				831094581CC3DB990084FCE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		831094591CC3DB990084FCE7 /* Build configuration list for PBXNativeTarget "GraffitiTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +519,7 @@
 				8310945B1CC3DB990084FCE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8310945C1CC3DB990084FCE7 /* Build configuration list for PBXNativeTarget "GraffitiUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +528,7 @@
 				8310945E1CC3DB990084FCE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

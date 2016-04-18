@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -36,19 +36,26 @@
                                     <action selector="clickClearBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CDG-HF-RWA"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cee-co-h1o">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Cee-co-h1o">
                                 <rect key="frame" x="20" y="564" width="560" height="29"/>
                                 <segments>
+                                    <segment title="Black"/>
                                     <segment title="Red"/>
                                     <segment title="Green"/>
                                     <segment title="Blue"/>
                                 </segments>
+                                <connections>
+                                    <action selector="colorSegmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="ljN-lK-cnt"/>
+                                </connections>
                             </segmentedControl>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hER-JG-kL8">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="1" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="hER-JG-kL8">
                                 <rect key="frame" x="18" y="526" width="564" height="31"/>
+                                <connections>
+                                    <action selector="lineWidthChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="f7N-fq-QO7"/>
+                                </connections>
                             </slider>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="qq3-ER-O24" firstAttribute="top" secondItem="qq3-xr-h47" secondAttribute="bottom" constant="8" symbolic="YES" id="ACL-AU-umm"/>
                             <constraint firstAttribute="leadingMargin" secondItem="hER-JG-kL8" secondAttribute="leading" id="Cco-gE-rxm"/>
@@ -68,8 +75,6 @@
                     </view>
                     <connections>
                         <outlet property="graffitView" destination="qq3-ER-O24" id="2Rr-Ud-Aan"/>
-                        <outlet property="lineColorSegment" destination="Cee-co-h1o" id="ZRb-e8-fiq"/>
-                        <outlet property="lineWidthSlider" destination="hER-JG-kL8" id="4vr-xd-FAI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

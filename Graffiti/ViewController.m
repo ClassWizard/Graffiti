@@ -11,9 +11,7 @@
 
 @interface ViewController ()
 
-@property (weak, nonatomic) IBOutlet GraffitiView *graffitView;
-@property (weak, nonatomic) IBOutlet UISlider *lineWidthSlider;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *lineColorSegment;
+@property (weak, nonatomic) IBOutlet GraffitiView *graffitView;//画板
 
 @end
 
@@ -29,12 +27,44 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Actions
 - (IBAction)clickRedoBtn:(UIButton *)sender {
     [self.graffitView redo];
 }
 
 - (IBAction)clickClearBtn:(UIButton *)sender {
     [self.graffitView clear];
+}
+
+- (IBAction)lineWidthChanged:(UISlider *)sender {
+    self.graffitView.lineWidth = sender.value;
+}
+
+- (IBAction)colorSegmentChanged:(UISegmentedControl *)sender {
+    self.graffitView.lineColor = [self colorWithIndex:sender.selectedSegmentIndex];
+}
+
+#pragma Helper
+/**
+ *  根据Segment的selectedIndex决定对应颜色
+ *
+ *  @param index Segment的选中索引
+ *
+ *  @return 对应颜色
+ */
+- (UIColor *)colorWithIndex:(NSInteger)index {
+    switch (index) {
+        case 0:
+            return [UIColor blackColor];
+        case 1:
+            return [UIColor redColor];
+        case 2:
+            return [UIColor greenColor];
+        case 3:
+            return [UIColor blueColor];
+        default:
+            return [UIColor blackColor];
+    }
 }
 
 @end
