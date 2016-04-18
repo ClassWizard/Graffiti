@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -36,6 +36,12 @@
                                     <action selector="clickClearBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CDG-HF-RWA"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="1" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="hER-JG-kL8">
+                                <rect key="frame" x="18" y="526" width="564" height="31"/>
+                                <connections>
+                                    <action selector="lineWidthChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="f7N-fq-QO7"/>
+                                </connections>
+                            </slider>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Cee-co-h1o">
                                 <rect key="frame" x="20" y="564" width="560" height="29"/>
                                 <segments>
@@ -48,30 +54,101 @@
                                     <action selector="colorSegmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="ljN-lK-cnt"/>
                                 </connections>
                             </segmentedControl>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="1" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="hER-JG-kL8">
-                                <rect key="frame" x="18" y="526" width="564" height="31"/>
-                                <connections>
-                                    <action selector="lineWidthChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="f7N-fq-QO7"/>
-                                </connections>
-                            </slider>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Cee-co-h1o" secondAttribute="bottom" constant="20" id="4m1-vS-21Q">
+                                <variation key="widthClass=regular" constant="8" symbolic="YES"/>
+                            </constraint>
+                            <constraint firstItem="qq3-xr-h47" firstAttribute="leading" secondItem="qq3-ER-O24" secondAttribute="trailing" constant="43" id="7Mc-19-fWA">
+                                <variation key="widthClass=regular" constant="8" symbolic="YES"/>
+                            </constraint>
+                            <constraint firstItem="qq3-ER-O24" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="978-fw-Dm1">
+                                <variation key="widthClass=regular" constant="8" symbolic="YES"/>
+                            </constraint>
+                            <constraint firstItem="qq3-xr-h47" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="9cV-Ej-UF3">
+                                <variation key="widthClass=regular" constant="8" symbolic="YES"/>
+                            </constraint>
                             <constraint firstItem="qq3-ER-O24" firstAttribute="top" secondItem="qq3-xr-h47" secondAttribute="bottom" constant="8" symbolic="YES" id="ACL-AU-umm"/>
                             <constraint firstAttribute="leadingMargin" secondItem="hER-JG-kL8" secondAttribute="leading" id="Cco-gE-rxm"/>
                             <constraint firstItem="hER-JG-kL8" firstAttribute="top" secondItem="qq3-ER-O24" secondAttribute="bottom" constant="8" symbolic="YES" id="EiM-nn-UU1"/>
+                            <constraint firstItem="OrU-WZ-3VX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="IHA-1g-PUG">
+                                <variation key="widthClass=regular" constant="8" symbolic="YES"/>
+                            </constraint>
                             <constraint firstItem="OrU-WZ-3VX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="OVX-mc-q8M"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="qq3-ER-O24" secondAttribute="leading" id="PEV-Gv-3yr"/>
                             <constraint firstItem="qq3-xr-h47" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="RS6-zN-19v"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hER-JG-kL8" secondAttribute="trailing" id="SMk-dH-QZH"/>
+                            <constraint firstItem="Cee-co-h1o" firstAttribute="leading" secondItem="qq3-ER-O24" secondAttribute="trailing" constant="8" id="WoG-7r-ZyW">
+                                <variation key="widthClass=regular" constant="8" symbolic="YES"/>
+                            </constraint>
                             <constraint firstAttribute="leadingMargin" secondItem="qq3-xr-h47" secondAttribute="leading" id="ZqC-6p-HrR"/>
                             <constraint firstItem="Cee-co-h1o" firstAttribute="top" secondItem="hER-JG-kL8" secondAttribute="bottom" constant="8" symbolic="YES" id="aHT-Gy-bYp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hER-JG-kL8" secondAttribute="trailing" id="e6P-iW-oww"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qq3-ER-O24" secondAttribute="trailing" id="eTm-yK-IfE"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Cee-co-h1o" secondAttribute="leading" id="fEn-yd-03J"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qq3-ER-O24" secondAttribute="bottom" constant="20" id="fqd-Pw-BCH">
+                                <variation key="widthClass=regular" constant="8" symbolic="YES"/>
+                            </constraint>
                             <constraint firstItem="qq3-ER-O24" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gcU-rW-qWK"/>
+                            <constraint firstItem="hER-JG-kL8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gic-c8-pki"/>
+                            <constraint firstItem="hER-JG-kL8" firstAttribute="leading" secondItem="qq3-ER-O24" secondAttribute="trailing" constant="27" id="hdv-M8-O77">
+                                <variation key="widthClass=regular" constant="8" symbolic="YES"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="Cee-co-h1o" secondAttribute="trailing" id="hkU-NT-aAG"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Cee-co-h1o" secondAttribute="bottom" constant="8" symbolic="YES" id="pH8-D8-Wxf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OrU-WZ-3VX" secondAttribute="trailing" id="uhk-zf-xmk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OrU-WZ-3VX" secondAttribute="trailing" id="vJ8-on-ZVO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Cee-co-h1o" secondAttribute="trailing" id="yLg-Uj-RbV"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="978-fw-Dm1"/>
+                                <exclude reference="PEV-Gv-3yr"/>
+                                <exclude reference="7Mc-19-fWA"/>
+                                <exclude reference="9cV-Ej-UF3"/>
+                                <exclude reference="e6P-iW-oww"/>
+                                <exclude reference="gic-c8-pki"/>
+                                <exclude reference="hdv-M8-O77"/>
+                                <exclude reference="4m1-vS-21Q"/>
+                                <exclude reference="fqd-Pw-BCH"/>
+                                <exclude reference="WoG-7r-ZyW"/>
+                                <exclude reference="hkU-NT-aAG"/>
+                                <exclude reference="IHA-1g-PUG"/>
+                                <exclude reference="vJ8-on-ZVO"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="978-fw-Dm1"/>
+                                <exclude reference="ACL-AU-umm"/>
+                                <include reference="PEV-Gv-3yr"/>
+                                <exclude reference="eTm-yK-IfE"/>
+                                <exclude reference="gcU-rW-qWK"/>
+                                <include reference="7Mc-19-fWA"/>
+                                <include reference="9cV-Ej-UF3"/>
+                                <exclude reference="RS6-zN-19v"/>
+                                <exclude reference="ZqC-6p-HrR"/>
+                                <exclude reference="Cco-gE-rxm"/>
+                                <exclude reference="EiM-nn-UU1"/>
+                                <exclude reference="SMk-dH-QZH"/>
+                                <include reference="e6P-iW-oww"/>
+                                <include reference="gic-c8-pki"/>
+                                <include reference="hdv-M8-O77"/>
+                                <include reference="4m1-vS-21Q"/>
+                                <include reference="fqd-Pw-BCH"/>
+                                <exclude reference="pH8-D8-Wxf"/>
+                                <include reference="WoG-7r-ZyW"/>
+                                <exclude reference="aHT-Gy-bYp"/>
+                                <exclude reference="fEn-yd-03J"/>
+                                <include reference="hkU-NT-aAG"/>
+                                <exclude reference="yLg-Uj-RbV"/>
+                                <include reference="IHA-1g-PUG"/>
+                                <exclude reference="OVX-mc-q8M"/>
+                                <exclude reference="uhk-zf-xmk"/>
+                                <include reference="vJ8-on-ZVO"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="graffitView" destination="qq3-ER-O24" id="2Rr-Ud-Aan"/>
@@ -79,7 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="223" y="274"/>
+            <point key="canvasLocation" x="222.75" y="274"/>
         </scene>
     </scenes>
 </document>
