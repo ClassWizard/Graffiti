@@ -6,6 +6,14 @@ A Demo for Draw Line with UIBezierPath
 
 一个关于使用UIBezierPath进行画线的Demo
 
+## Display Type Visual Examples 
+
+----
+### Portrait
+![Portrait](http://g.recordit.co/fXZWQn6t7t.gif)
+### Landscape
+![Landscape](http://recordit.co/8HyQIF8RiP.gif)
+
 ##Usage
 ---
 
